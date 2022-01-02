@@ -13,19 +13,12 @@ import org.springframework.web.bind.annotation.*;
  *
  * @mbg.generated 2021/06/13
  */
-@RequestMapping("/book")
 @RestController
 public class BookController {
 
-    /**
-     * 分页查询
-     * @param req
-     * @return 
-     */
-
-    @PostMapping("/test")
+    @GetMapping("/test")
     public String hello() {
-        return "hello";
+        return "h";
     }
 
 
