@@ -3,23 +3,23 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql:///dandelion?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
-    password: 654321
+    password: 518000
   flyway:
-  # ÊÇ·ñÆôÓÃflyway
+  # ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½flyway
   enabled: true
-  # ±àÂë¸ñÊ½£¬Ä¬ÈÏUTF-8
+  # ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ä¬ï¿½ï¿½UTF-8
   encoding: UTF-8
-  # Ç¨ÒÆsql½Å±¾ÎÄ¼þ´æ·ÅÂ·¾¶£¬Ä¬ÈÏdb/migration
+  # Ç¨ï¿½ï¿½sqlï¿½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½db/migration
   locations: classpath:db/migration
-  # Ç¨ÒÆsql½Å±¾ÎÄ¼þÃû³ÆµÄÇ°×º£¬Ä¬ÈÏV
+  # Ç¨ï¿½ï¿½sqlï¿½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æµï¿½Ç°×ºï¿½ï¿½Ä¬ï¿½ï¿½V
   sql-migration-prefix: V
-  # Ç¨ÒÆsql½Å±¾ÎÄ¼þÃû³ÆµÄ·Ö¸ô·û£¬Ä¬ÈÏ2¸öÏÂ»®Ïß__
+  # Ç¨ï¿½ï¿½sqlï¿½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ÆµÄ·Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½2ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½__
   sql-migration-separator: __
-  # Ç¨ÒÆsql½Å±¾ÎÄ¼þÃû³ÆµÄºó×º
+  # Ç¨ï¿½ï¿½sqlï¿½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ÆµÄºï¿½×º
   sql-migration-suffixes: .sql
-  # Ç¨ÒÆÊ±ÊÇ·ñ½øÐÐÐ£Ñé£¬Ä¬ÈÏtrue
+  # Ç¨ï¿½ï¿½Ê±ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ð£ï¿½é£¬Ä¬ï¿½ï¿½true
   validate-on-migrate: true
-  # µ±Ç¨ÒÆ·¢ÏÖÊý¾Ý¿â·Ç¿ÕÇÒ´æÔÚÃ»ÓÐÔªÊý¾ÝµÄ±íÊ±£¬×Ô¶¯Ö´ÐÐ»ù×¼Ç¨ÒÆ£¬ÐÂ½¨schema_version±í
+  # ï¿½ï¿½Ç¨ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½Ç¿ï¿½ï¿½Ò´ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ôªï¿½ï¿½ï¿½ÝµÄ±ï¿½Ê±ï¿½ï¿½ï¿½Ô¶ï¿½Ö´ï¿½Ð»ï¿½×¼Ç¨ï¿½Æ£ï¿½ï¿½Â½ï¿½schema_versionï¿½ï¿½
   baseline-on-migrate: true
   security:
     user:
@@ -27,3 +27,8 @@ spring:
       password: 123456
 server:
   port: 8080
+debug: true
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+

@@ -1,4 +1,5 @@
-CREATE TABLE `mini_artical` (
+DROP TABLE IF EXISTS `mini_article`;
+CREATE TABLE `mini_article` (
   `uni_id` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,
   `content` text CHARACTER SET big5 COLLATE big5_chinese_ci,
   `user_id` int DEFAULT NULL,
